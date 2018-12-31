@@ -20,12 +20,13 @@ describe('Verifying Elements on SignIn page', () =>
         expect(signin.Email_Textbox.isExisting()).to.true
         expect(signin.Password_Textbox.isExisting()).to.true
         expect(signin.RememberMe_Label.isExisting()).to.true
+        expect(signin.RememberMe_Label.getText()).is.equal("Remember Me")
         expect(signin.Login_Button.getValue()).to.be.equal("Login")
         expect(signin.Login_Button.isExisting()).to.true
         expect(signin.ForgetPassword_Link.isExisting()).to.true
     })
 
-    it('Verifying signin Block', () => 
+    it('Verifying SignUp Block', () => 
     {
         expect(signin.Dont_have_account_Link.isExisting()).to.true
     })
