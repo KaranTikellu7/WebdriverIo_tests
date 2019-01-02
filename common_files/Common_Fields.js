@@ -4,6 +4,11 @@ class CommonFields
 
   constructor() 
   {
+    this.AceinvoiceHeader_Text = "Aceinvoice"
+    this.Tagline_Text = "Time Tracking and Invoicing"
+    this.RememberMe_Text = "Remember Me"
+    this.LoginButton_Text = "Login"
+    
     this.Valid_EmailAddress = "Prabhakar+test@bigbinary.com"
     this.Valid_Password = "welcome"
 
