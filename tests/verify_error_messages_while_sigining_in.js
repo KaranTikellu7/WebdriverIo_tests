@@ -14,7 +14,6 @@ describe('Verifying error messages While signing in', ()=>
         Signin_Page.Login_Button.click()
 
         Common.Wait(1000)
-        expect(Common.ErrorMessage.isVisible()).to.true
         expect(Common.ErrorMessage.getText()).to.equal(Common.Invalid_ErrorMessage)            
     })
 
@@ -24,7 +23,6 @@ describe('Verifying error messages While signing in', ()=>
         Signin_Page.Click_LoginButton()
 
         Common.Wait(1000)
-        expect(Common.ErrorMessage.isVisible()).to.true
         expect(Common.ErrorMessage.getText()).to.equal(Common.Invalid_ErrorMessage)        
     })
 
@@ -33,7 +31,6 @@ describe('Verifying error messages While signing in', ()=>
         Signin_Page.Click_LoginButton()
 
         Common.Wait(1000)
-        expect(Common.ErrorMessage.isVisible()).to.true
         expect(Common.ErrorMessage.getText()).to.equal(Common.Invalid_ErrorMessage)             
     })
 
@@ -44,7 +41,6 @@ describe('Verifying error messages While signing in', ()=>
         Signin_Page.Click_LoginButton()
         
         Common.Wait(1000)
-        expect(Common.ErrorMessage.isVisible()).to.true
         expect(Common.ErrorMessage.getText()).to.equal(Common.Invalid_ErrorMessage)        
     })
 
@@ -55,7 +51,6 @@ describe('Verifying error messages While signing in', ()=>
         Signin_Page.Click_LoginButton()
         
         Common.Wait(1000)
-        expect(Common.ErrorMessage.isVisible()).to.true
         expect(Common.ErrorMessage.getText()).to.equal(Common.Invalid_ErrorMessage)        
     })
 
@@ -66,7 +61,6 @@ describe('Verifying error messages While signing in', ()=>
         Signin_Page.Click_LoginButton()
         
         Common.Wait(1000)
-        expect(Common.ErrorMessage.isVisible()).to.true
         expect(Common.ErrorMessage.getText()).to.equal(Common.Invalid_ErrorMessage)            
     })
 })
