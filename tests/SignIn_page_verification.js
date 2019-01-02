@@ -2,15 +2,15 @@ const signin = require('../PageObjects/SignIn.Page')
 
 beforeEach(() => 
 {
-    browser.url('./')
+    browser.url('./')   
 })
 
 describe('Verifying Elements on SignIn page', () => 
 {
     it('Verifing Headers', () => 
     {
-        expect(signin.Header_Label.getText()).to.equal("AceInvoice")
-        expect(signin.TagLine.getText()).to.equal("Time Tracking and Invoicing")
+        expect(signin.Header_Label.getText()).to.equal(AceinvoiceHeader_Text)
+        expect(signin.TagLine.getText()).to.equal(TagLine_Text)
         expect(signin.Aceinvoice_Logo.isVisible()).to.true
     })
 
@@ -20,8 +20,8 @@ describe('Verifying Elements on SignIn page', () =>
         expect(signin.Email_Textbox.isVisible()).to.true
         expect(signin.Password_Textbox.isVisible()).to.true
         expect(signin.RememberMe_Label.isVisible()).to.true
-        expect(signin.RememberMe_Label.getText()).to.equal("Remember Me")
-        expect(signin.Login_Button.getValue()).to.equal("Login")
+        expect(signin.RememberMe_Label.getText()).to.equal(RememberMe_Text)
+        expect(signin.Login_Button.getValue()).to.equal(Login_Text)
         expect(signin.Login_Button.isVisible()).to.true
         expect(signin.ForgetPassword_Link.isVisible()).to.true
     })

@@ -10,7 +10,14 @@ class SignIn_Values
     get Login_Button() {return $("input[type='submit']")}
     get ForgetPassword_Link() {return $("a=Forgot Password?")}
     get Dont_have_account_Link() {return $("a=Don't have an account? Sign Up")}      
+    
+    //Method for clicking login button.
+    Click_LoginButton()
+    {
+      this.Login_Button.click()
+    }
 }
 
 module.exports= new SignIn_Values();
+
 
